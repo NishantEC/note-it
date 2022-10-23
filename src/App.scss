@@ -1,0 +1,50 @@
+@import url(./Components/Card/card.scss);
+
+* {
+  box-sizing: border-box;
+}
+.App {
+  background-color: #e38b29;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-center {
+  display: grid;
+  place-content: center;
+}
+
+.header-wrapper {
+  display: flex;
+  place-content: center;
+  height: 150px;
+}
+
+.header-wrapper > p {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 3rem;
+  padding: 0.1rem;
+}
+
+.logo-head2 {
+  color: #ffd8a9;
+}
+
+.cards-container {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

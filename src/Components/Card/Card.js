@@ -11,6 +11,7 @@ function Card({ title, description, id, handleDelete }) {
 
   return (
     <>
+          
       <motion.div
         initial={{ x: -100 }}
         animate={{ x: 0 }}

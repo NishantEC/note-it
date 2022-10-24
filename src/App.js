@@ -25,8 +25,8 @@ function App() {
         <p className="logo-head2">it</p>
       </div>
 
-      <div className="cards-container">
         <NewNote addNewNote={(newNote) => addNewNote(newNote)} />
+      <div className="cards-container">
 
         {Notes.map((note, index) => {
           return (
